@@ -1,0 +1,7 @@
+访问：
+https://github.com/kubernetes/dashboard
+创建token步骤：
+kubectl create serviceaccount linyuhang
+kubectl create clusterrolebinding linyuhang-role --clusterrole=edit --serviceaccount=default:linyuhang --namespace=default
+kubectl get serviceaccounts linyuhang -o yaml
+kubectl get secret linyuhang-token-c6p78 -o yaml
